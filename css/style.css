@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+@font-face {
+    font-family: unicode;
+    src: url('../fonts/3d_unicode.ttf');
+}
+
+h1{
+    color: red;
+    /* font-family: 'Qahiri', sans-serif; */
+}
+
+.text-white{
+    color: #5e0afa;
+    font-size: 18px;
+    text-decoration: underline overline line-through  ;  
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+    font-family: unicode;
+    text-shadow: 4px 4px 7px red;
+}
+
+
+/* #zura{
+    color: greenyellow;
+} */
+
+#line{
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
