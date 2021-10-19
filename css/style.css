@@ -10,16 +10,17 @@ h1{
     /* font-family: 'Qahiri', sans-serif; */
 }
 
+
 .text-white{
-    color: #5e0afa;
-    font-size: 18px;
-    text-decoration: underline overline line-through  ;  
-    text-align: center;
-    line-height: 1.5;
-    letter-spacing: 7px;
-    text-transform: capitalize;
-    font-family: unicode;
-    text-shadow: 4px 4px 7px red;
+    color: #5e0afa; /* ფერის თვისება */
+    font-size: 18px; /* ფონტის ზომა*/
+    text-decoration: underline overline line-through  ;  /* ხაზის გასმა (ზედა,ქვედა, შუა) */ 
+    text-align: center; /* ტექსტის განლაგება (მარცხენა ცენტრი მარჯვენა) */
+    line-height: 1.5; /* ტექსტის დაშორება წინადადებებს შორის (ახალ ხაზზე) */
+    letter-spacing: 7px; /* სიმბოლოების დაშორება დაშორება ჰორიზონტალურად */
+    text-transform: capitalize; /* ტექსტი დიდი და პატარა ასოები (ლათინური) */
+    font-family: unicode; /* ფონტის მინიჭება */
+    text-shadow: 4px 4px 7px red;  /* ტექსტის შუქჩრდილები */
 }
 
 
@@ -28,8 +29,8 @@ h1{
 } */
 
 #line{
-    width: 500px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 500px; /* სიგანე ზოგადი თვისებაა ყველა ტეგს აქვს  */
+    white-space: nowrap; /* ტექსტის განლაგება ერთ ხაზზე */
+    overflow: hidden; /*  ფიქსირებული ზომის გარეთ ტექსტის ან ნებისმიერი ელემენტის გაქრობა */
+    text-overflow: ellipsis; /* ტექსტის ბოლო 3 წერტილი :) */
 }
