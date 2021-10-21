@@ -24,6 +24,7 @@ h1{
     letter-spacing: 7px; /* სიმბოლოების დაშორება დაშორება ჰორიზონტალურად */
     text-transform: capitalize; /* ტექსტი დიდი და პატარა ასოები (ლათინური) */
     font-family: unicode; /* ფონტის მინიჭება */
+    font-weight: bold;
     text-shadow: 4px 4px 7px red;  /* ტექსტის შუქჩრდილები */
 }
 
@@ -57,4 +58,78 @@ h1{
     text-align: center;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+.card{
+    width: 280px;
+    border: 1px solid /* solid, dashed, dotted */ #cccccc47; 
+    margin: 25px auto;
+    border-radius: 7px;
+    box-shadow: 7px 8px 14px #c5d5f78f;
+}
+
+.red{
+    background-color: red;
+    height: 450px;
+}
+
+.green{
+    background-color: rgb(44, 236, 60);
+    height: 300px;
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px; */
+    padding: 0 50px;
+}
+
+.blue{
+    background-color: blue;
+    height: 300px;
+}
+
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.card-body{
+    text-align: center;
+    padding: 25px;
+}
+
+.img-center{
+    display: block;
+    margin: auto;
+}
+
+ 
+.card-body a{
+    text-decoration: none;
+    color: rgb(43, 45, 63);
+}
+
+.card-body a{
+    text-decoration: none;
+    color: rgb(43, 45, 63);
+}
+
+.card-body p{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(214, 85, 85);
+}
+
+.card-body del{
+    color: #ccc;
+}
+
+.card-body h4{
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: rgba(37, 31, 46, 0.514);
 }
