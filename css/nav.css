@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 1800px;
+}
+
+header{
+    background-image: url('../img/Photo.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+    max-width: 100%;
+}
+
+nav{
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
+.navflex{
+   display: flex;
+}
+
+nav ul {
+    margin-left: auto;
+
+}
+
+nav ul  li{
+ display: inline-block;
+}
+
+nav ul  li a{
+  margin: 0 7px;
+  color: #fff;
+  text-decoration: 0;
+
+}
+
+.home i {
+    position: relative;
+    top: 9px;
+    left: 14px;
+}
+
+.card{
+    width: 350px;
+    margin: auto;
+    border: 3px solid red;
+}
+
+.text-body{
+    padding: 7px;
+
+}
+
+.disc{
+    position: absolute;
+    background-color: green;
+    display: inline-block;
+    color: #fff;
+    padding: 7px;
+    
+    
+}
+
+
+
+.stick{
+    height: 500px;
+    position: relative;
+    background-color: brown;
+}
+
+.psosticky{
+    position: sticky;
+    top: 0;
+    width: 50%;
+    right: 0;
+    height: 20px;
+    background-color: blueviolet;
+}
+
+.scroltop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
