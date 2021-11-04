@@ -1,10 +1,13 @@
 *{
     box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 body{
     margin: 0;
-    height: 1800px;
+ 
+    background-color: #363636;
 }
 
 header{
@@ -106,4 +109,145 @@ nav ul  li a{
 
 html{
     scroll-behavior: smooth;
+}
+
+
+.cards{
+    width: 350px;
+    margin: 50px  auto;
+    background-color: #fff;
+    border-radius: 22px ;
+    box-shadow: -14px 14px 1px #323131;
+    position: relative;
+}
+
+img{
+    max-width: 100%;
+}
+
+.logo{
+    width: 90px;
+}
+
+.card-head{
+    color: white;
+    padding: 0  30px;
+    background: linear-gradient(90deg, rgba(252,150,3,1) 16%, rgba(222,171,0,1) 78%);
+    border-radius: 22px 10px 0 0;
+    font-family: monospace;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.card-head h1{
+    margin-bottom: 5px;
+}
+
+.card-head h3{
+    font-size: 160px;
+    color: #3231315c;
+    position: relative;
+    left: -37px;
+  
+}
+
+.promoimg{
+    position: absolute;
+    top: 12%;
+    left: 35%;
+}
+
+.cards-body{
+    padding: 22px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.cards-body h4{
+ font-size: 22px;
+ margin-bottom: 4px;
+ display: flex;
+ justify-content: space-between;
+}
+.cards-body h4 span{
+background-color: #f44336;
+padding: 1px 10px;
+border-radius: 3px;
+color: #fff;
+}
+
+.cards-body h5{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+ }
+
+ .size {
+     margin-top: 25px;
+ }
+
+ .size span{
+     display: inline-flex;
+     width: 30px;
+     height: 30px;
+     font-weight: bold;
+     justify-content: center;
+     border-radius: 50px;
+     align-items: center;
+ }
+
+ .size .active{
+  background-color: #f69a02;
+ }
+
+ .colours{
+     margin-top: 15px;
+   position: relative;
+   padding-bottom: 35px;
+ }
+
+ .colours span{
+     width: 20px;
+     height: 20px;
+     display: inline-flex;
+     border-radius: 50px;
+ }
+
+
+ .colours .active{
+    border: 1px solid #00cdef;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4px;
+}
+
+.colours .active span{
+    background-color: #00cdef;
+    width: 10px;
+    height: 10px;
+}
+
+ .red{
+     background-color: red;
+ }
+
+ .black{
+    background-color: rgb(0, 0, 0);
+}
+
+.mb-3{
+    margin-bottom: 15px;
+}
+
+.price{
+    color: #fff;
+    position: absolute;
+    background: #00cdef;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 7px 12px;
+    box-shadow: 7px 7px 7px #00cdef;
+    right: -19%;
+    top: 25%;
 }
