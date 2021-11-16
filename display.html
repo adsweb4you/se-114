@@ -5,154 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/display.css">
+   <style>
+       *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    color: white;
+    display: flex;
+    background-image: url(https://i.pinimg.com/originals/08/36/48/0836483abf1f3a6081988c06255b75e3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+
+
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px 20px;
+    
+}
+nav ul{
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+#the_logo{
+    margin: 40px 70px;
+    font-size: 40px;
+}
+#middle_content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+#middle_content h1{
+    font-size: 70px;
+}
+#middle_content p{
+    margin: 20px 0;
+}
+
+#middle_content button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(27, 24, 216);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#mtavari{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: auto;
+}
+.w-100{
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+
+.w-30{
+    width: 30%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.w-70{
+    width: 70%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.color1{
+
+    height: 250px;
+    background-color: blue;
+}
+
+   </style>
 </head>
 <body>
-
-    <nav>
-        <div class="content">
-        <ul>
-            <li><a href="" class="home">მთავარი</a></li>
-            <li><a href="">მთავარი</a></li>
-            <li><a href="">მთავარი</a></li>
-            <li><a href="">მთავარი</a></li>
-            <li><a href="">მთავარი</a></li>
-        </ul>
+    <header>
+        <nav>
+            <H1 id="the_logo">!Nterion</H1>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">BEDROOM</a></li>
+                <li><a href="">DINING</a></li>
+                <li><a href="">KITCHEN</a></li>
+                <li><a href="">BACKYARD</a></li>
+            </ul>
+        </nav>
+        <div id="middle_content">
+            <h1>DESIGNE YOUR HOUSE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In minima corporis adipisci laudantium commodi ipsum expedita numquam ratione deserunt! Eaque, laboriosam <br> voluptatum aliquam aliquid amet iusto necessitatibus inventore eos.</p>
+            <button type="button">WATCH MORE</button>
+            <button type="button">SUBSCRIBE</button>
         </div>
-    </nav>
-
-    <header class="sm">
-     
-        <div class="text">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Magnam fugiat dolore ad recusandae adipisci nesciunt minima saepe 
-              reiciendis? Aliquam omnis maiores dignissimos natus veritatis ex. 
-              Necessitatibus modi iste cum qui.</p>
-        </div>
-
-        <div class="text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Magnam fugiat dolore ad recusandae adipisci nesciunt minima saepe 
-                 reiciendis? Aliquam omnis maiores dignissimos natus veritatis ex. 
-                 Necessitatibus modi iste cum qui.</p>
-           </div>
-
-           <div class="text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Magnam fugiat dolore ad recusandae adipisci nesciunt minima saepe 
-                 reiciendis? Aliquam omnis maiores dignissimos natus veritatis ex. 
-                 Necessitatibus modi iste cum qui.</p>
-           </div>
 
     </header>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-    <div class="content"><!-- contend div -->
-       <div class="row"><!-- flex div -->
-       
-        <div class="col">
-            <div class="card">
-                <img src="img/Photo.png" alt="">
-                <p>ჩემი პირველი გრიდი</p>
+    <div id="mtavari">
+        <div class="w-100">
+            <div class="color1">
+                header
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="img/Photo.png" alt="">
-                <p>ჩემი პირველი გრიდი</p>
+        <div class="w-100">
+            <div class="color1">
+                navigation
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="img/Photo.png" alt="">
-                <p>ჩემი პირველი გრიდი</p>
+        <div class="w-30">
+            <div class="color1">
+                aside
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="img/Photo.png" alt="">
-                <p>ჩემი პირველი გრიდი</p>
+        <div class="w-70">
+            <div class="color1">
+                content
+            </div>
+            <br>
+            <div class="color1">
+                section
             </div>
         </div>
-
-        <div class="col-7">
-            <div class="card">
-                <img src="img/Photo.png" alt="">
-                <p>ჩემი პირველი გრიდი</p>
+        <div class="w-100">
+            <div class="color1">
+                navigation
             </div>
         </div>
-
-
-       </div><!-- / flex div -->
-    </div><!-- / contend div -->
-
-
-    <!-- <span>1</span>
-    <span>111111111111</span>
-    <span>3</span> -->
-
-<!-- item -->
-    <div class="mydiv">
-       <p>ჩემი ტექსტი</p> 
-       <p>ჩემი ტექსტი</p> 
     </div>
-<!-- / item -->
-
-
-
-<!-- item -->
-<div class="mydiv">
-    <span>ჩემი ტექსტი</span> 
-    <span>ჩემი ტექსტი</span> 
- </div>
-<!-- / item -->
-
-
-<!-- item -->
-<div class="mydiv">
-    <p>ჩემი ტექსტი</p> 
-    <p>ჩემი ტექსტი</p> 
- </div>
-<!-- / item -->
-
-
-<div class="ex">
-    <div class="w-100">
-        <div class="colors1">
-            100%
-        </div>
-    </div>
-
-    <div class="w-100">
-         <div class="colors1">
-             100%
-         </div>
-    </div>
-
-    <div class="w-30">
-        <div class="colors1">
-           aside
-        </div>
-    </div>
-
-    <div class="w-70">
-        <div class="colors1">
-            content
-         </div>
-         <hr>
-         <div class="colors1">
-            section
-         </div>
-    </div>
-
-
-    <div class="w-100">
-        <div class="colors1">
-           Footer
-        </div>
-    </div>
-
-</div>
-
 </body>
 </html>

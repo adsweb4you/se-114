@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+div p:first-child{
+     background-color: red;
+}
+
+div p:last-child{
+    background-color: rgb(30, 255, 0);
+}
+
+div p:nth-child(3){
+    background-color: rgb(47, 0, 255);
+}
+
+div p:nth-child(3) span{
+    background-color: rgb(61, 1, 1);
+}
+
+
+div p:nth-child(odd){
+ color: rgb(99, 160, 151);
+}
+
+
+div p:nth-child(even){
+ color: rgb(49, 20, 20);
+}
+
+
+
+div p:not(.gift){
+      text-align: center;
+ }
+
+
+[value="1"]{
+     padding: 50px;
+}
+
+
+input[type="checkbox"]  + label::before{
+ content: "მონიშნეთ";
+ background-color: red;
+ }
+
+input[type="checkbox"]:checked + label::before{
+    content: "მონიშნულია";
+    background-color: rgb(9, 238, 96);
+}
+
+
+.after::before{
+
+    content: "";
+    background-color: green;
+    padding: 25px;
+    display: inline-block;
+}
+
+
+.after::after{
+
+    content: "";
+    background-color: grey;
+    padding: 25px;
+    display: inline-block;
+}
+
+.relform{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+.relform input{
+    padding: 7px;
+    border: 2px solid #000;
+}
+
+
+.relform input + span{
+
+    position: absolute;
+    top: 16%;
+    left: 8%;
+    color: #ccc;
+    transition: all .6s;
+    pointer-events: none;
+
+}
+
+
+.relform input:focus + span{
+    top: -83%;
+    left: 1%;
+}
