@@ -5,239 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-         *{
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
-     /* margin-block-start: 0;
-     margin-block-end: 0; */
- }
- body{
-     height: 1500px;
- }
-.main{
-    width: 400px;
-    height: 600px;
-  margin-left: 100px;
- margin-top: 100px;
-  box-shadow: -10px 20px 10px rgb(27, 26, 26);
- border-radius: 20px 20px 20px 20px ;
- background-color: rgb(216, 216, 65);
+    <style>
+        body{
+    margin: 0;
 }
-.first{
-height: 50%;
-position: relative;
-}
-.nikeicon{
-position: absolute;
-width: 100px;
-height: 100px;
-margin-left: 10px;
 
+*{
+    box-sizing: border-box;
 }
-.second{
-    border-radius: 0px 0px 20px 20px;
-    height: 50%;
-    background-color: white;
-}
-.text{
+
+nav{
     color: white;
-text-align: left;
-padding-top: 100px;
-padding-left: 10px;
-text-decoration: white;
+    display: flex;
+    background-image: url(https://i.pinimg.com/originals/08/36/48/0836483abf1f3a6081988c06255b75e3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
 }
-p{
-padding-top: 15px;
-width: 300px;
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
-.shoe{
-    width: 500px;
-    height: 500px;
-  position: absolute;
-  margin-left: 100px;
-  margin-top: -350px;
+nav ul li{
+    display: inline-block;
+    margin: 20px 20px;
     
 }
-.span{
-    padding-left: 10px;
+nav ul{
     display: flex;
-}
-.tittle{
-    position: relative;
-    left: 30px;
-    top: 5px;
-    background-color: tomato;
-    height: 20px;
- }
- .secondhalf{
-     padding-bottom: 50px;
-     padding-top: 10px;
-    padding-left: 10px;
-     display: block;
- }
- .raiting{
-     padding-top: 10px;
-     display: flex;
-     margin-left: -6px;
-     /* margin minusis gareshe ver gavaswore marcxena mxares */
-     }
- i{ 
-     padding-left: 5px;
- }
- .size{
- position: relative;
- top: 20px;
- /* position relativis gareshe sizes ver vamodraveb */
-}
-.number{
-    
-   padding-left: 10px;
-}
-#markednumber{
-    background-color: rgb(241, 245, 17);
-    border-radius: 50%;
-    /* background-position: center;  es arshvelis */
-    margin-left: 5px;
-    padding-right: 7px;
-    /* margin leftis da pading rightis gareshe backgorund pershi ver zis shuashi */
-}
-h5{
-    padding-left: 10px;
-    padding-top: 20px;
-}
-.markcolour{
-    padding-left: 10px;
-    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
     margin-top: 20px;
 }
-.colour1{
-   /* border:1px solid blue; borderi ar ketdeba */
-   
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    border-radius: 50%;
+.black{
+        margin: 40px 70px;
+        font-size: 20px;
+}
 
-   
-}
-.colour2{
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(187, 82, 82);
-    border-radius: 50%;
-   
-   
-}
-.colour3{
-    
-    width: 20px;
-    height: 20px;
-    background-color: rgb(162, 104, 196);
-    border-radius: 50%;
-    margin-left: 20px;
-   
-}
-.salarycolour{
-    border-radius: 10px;
-    position: relative;
-    left: 170px;
-    bottom: 15px;
-    width: 140px;
-    height: 50px;
-    background-color: blue;
-}
-.salary{
+#middle{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
     color: white;
-
- text-align: center;
- padding-top: 15px;
+}
+#middle h1{
+    font-size: 70px;
+}
+#middle p{
+    margin: 20px 0;
 }
 
-     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+#middle button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(27, 24, 216);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+    </style>
 </head>
 <body>
-    
-<div class="main">
 
+    <nav>
+        <h1 class="black">!Nterior</h1>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">BEDROOM</a></li>
+            <li><a href="">DINING</a></li>
+            <li><a href="">KITCHEN</a></li>
+            <li><a href="">BACKYARD</a></li>
+        </ul>
+    </nav>
+    <div id="middle">
+        <h1>DESIGNE YOUR HOUSE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In minima corporis adipisci laudantium commodi ipsum expedita numquam ratione deserunt! Eaque, laboriosam <br> voluptatum aliquam aliquid amet iusto necessitatibus inventore eos.</p>
+        <button type="button">WATCH MORE</button>
+        <button type="button">SUBSCRIBE</button>
+    </div>
 
-<div class="first">
-<img class="nikeicon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/230_Nike_logo-512.png" alt="">
-<div class="text">
-<h1>AIR STRUCTURE</h1>
-<p>Lorem ipsum, dolor sit amet colaudantium! Culpa, nemo doloribus molestias saepe minima a pariatur!</p>
-</div>
-
-<img class="shoe" src="https://o.remove.bg/downloads/fcb9b6c8-53d7-442d-b423-7452db13e0b4/image-removebg-preview.png" alt="">
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="second">
-    <div class="span">
- <span> <h2> AIR STUCTURE 19</h2></span>
- <span class="tittle"> NEW</span>
-
-</div>
-
-
-
-
-<div class="secondhalf">
-
-<h4>RUNNING COLLECTIONS</h4>
-<div class="raiting">
-    <i class="bi bi-star-fill"></i>
-    <i class="bi bi-star-fill"></i>
-    <i class="bi bi-star-fill"></i>
-    <i class="bi bi-star"></i>
-    <i class="bi bi-star"></i>
-</div>
-<b class="size">SIZE</b>
-</div>
-
-<span class="number">7</span>
-<span class="number">8</span>
-<span class="number" id="markednumber">9</span>
-<span class="number">10</span>
-<span class="number">11</span>
-
-
-<h5>COLOUR</h5>
-
-<div class="markcolour">
-
-<div class="colour1"></div>
-<div class="colour2"></div>
-<div class="colour3"></div>
-<div class="salarycolour">
-<div class="salary">USD 12,995</div> 
-</div>
-</div>
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-</div>
 </body>
 </html>
