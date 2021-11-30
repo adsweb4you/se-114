@@ -1,0 +1,121 @@
+@use "button.scss";
+
+$color:red;
+$parentspace:35px;
+
+@mixin center($bgcolor:red, $colors:#fff) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @if $bgcolor == red {
+        text-transform: uppercase;
+    }@else if $bgcolor == blue {
+        text-transform: lowercase;
+    }
+    @else{
+        text-transform: capitalize;
+    }
+    transform: translate(-50%, -50%);
+    background-color:$bgcolor; 
+    color: $colors;
+}
+
+
+%borderss{
+    border-radius: 50px;
+}
+
+.card{
+    @extend %borderss;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    box-shadow: 4px 4px 4px #ccc;
+
+    img{
+        max-width: 100%;
+    }
+
+    .disc{
+   
+        @include center(blue, black);
+    }
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+ 
+    margin: 0;
+}
+
+
+section{
+    margin-top: $parentspace;
+    height: 450px;
+    &:nth-child(odd){
+        background-color: aqua;
+    }
+
+    &:nth-child(even){
+       background: {
+           image:url('../img/Photo.png');
+           size:cover;
+           position: center;
+           repeat:no-repeat;
+
+       };
+    }
+
+   
+
+    &:hover{
+        width: 80%;
+    }
+
+    h1{
+       
+       
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+ 
+button{
+  @include button.btnsm(15px);
+}
+
+nav{
+    display: flex;
+    background-color: blue;
+    
+    .navbar{
+     padding-left: 0;
+     margin-left: auto;
+     li{
+         display: inline-block;
+
+        &:hover {
+            .drowp{
+                display: block;
+            }
+        }
+
+         .drowp{
+             display: none;
+             position: absolute;
+             a{
+                 display: block;
+             }
+         }
+     }
+}
+}
+

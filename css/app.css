@@ -1,0 +1,88 @@
+.card {
+  border-radius: 50px;
+}
+
+.card {
+  position: relative;
+  padding: 25px;
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  box-shadow: 4px 4px 4px #ccc;
+}
+.card img {
+  max-width: 100%;
+}
+.card .disc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-transform: lowercase;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  margin-top: 35px;
+  height: 450px;
+}
+section:nth-child(odd) {
+  background-color: aqua;
+}
+section:nth-child(even) {
+  background-image: url("../img/Photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section:hover {
+  width: 80%;
+}
+section h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+button {
+  border: 0;
+  padding: 15px;
+  outline: 0;
+  color: #000;
+  font-size: 15px;
+}
+button:active, button:focus {
+  outline: 0;
+}
+
+nav {
+  display: flex;
+  background-color: blue;
+}
+nav .navbar {
+  padding-left: 0;
+  margin-left: auto;
+}
+nav .navbar li {
+  display: inline-block;
+}
+nav .navbar li:hover .drowp {
+  display: block;
+}
+nav .navbar li .drowp {
+  display: none;
+  position: absolute;
+}
+nav .navbar li .drowp a {
+  display: block;
+}
+
+/*# sourceMappingURL=app.css.map */
