@@ -1,0 +1,12 @@
+1) შევქმნათ შემდეგი ტიპის ცვლადები 
+
+
+   -- Number
+   -- array
+   -- string
+   -- boolean
+   -- object
+   -- function
+
+2) typeof ფუნქციაში დავბეჭდოთ ერთ ერთის ტიპის (console.log())
+3) სტრინგი გამოვიტანოთ html ში
