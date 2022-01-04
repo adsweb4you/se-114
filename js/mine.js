@@ -28,7 +28,7 @@ document.getElementById("output").innerHTML = "<h1>" + myname + "</h1>";
 let x1 = 15;
 let y1 = "15";
 
-console.log(x1 + Number(y1));
+// console.log(x1 + Number(y1));
 
 function Calc(param1, param2, ...rest){
  
@@ -40,16 +40,16 @@ function Calc(param1, param2, ...rest){
 
 // let local =  Calc(4,5);
 
-console.log(Calc(4,5,8, 35, "89797"))
-console.log(Calc(24,45))
-console.log(Calc(124,55))
-console.log(Calc(43,55))
+// console.log(Calc(4,5,8, 35, "89797"))
+// console.log(Calc(24,45))
+// console.log(Calc(124,55))
+// console.log(Calc(43,55))
 
-let arrfun = (ss, mm)  => {
-    console.log(ss, mm);
-} 
+// let arrfun = (ss, mm)  => {
+//     console.log(ss, mm);
+// } 
  
-arrfun("arrow function", "par1")
+// arrfun("arrow function", "par1")
 
 let $ = id => {
     return {
@@ -86,7 +86,7 @@ function fillt(fil, str){
 
 let filterded = fillt("html", "html არის მარქაფის ენა");
 
-console.log(filterded);
+// console.log(filterded);
 
 
 function apphtml(){
@@ -110,9 +110,9 @@ function sm(a, b){
     return a * b;
 }
 
-console.log(sm(4.5, 99.4).toFixed(1));
-console.log(sm(4.5, 99.4).toFixed(2));
-console.log(sm(4.5, 99.4).toFixed(3));
+// console.log(sm(4.5, 99.4).toFixed(1));
+// console.log(sm(4.5, 99.4).toFixed(2));
+// console.log(sm(4.5, 99.4).toFixed(3));
 
 let Phone = {
     name:"iphone 8",
@@ -138,4 +138,51 @@ let allobj = Object.entries(Phone);
 
  
 
-console.log();
+let ClassAraay = ["ალექსანდრე", "გიორგი", "გიორგი", "ვალოდია", "თორნიკე", "ირაკლი", "ლაშა"];
+let arrnum = [15, 7, 22, 33, 458, 1600, 3500];
+let ssarr =  arrnum.sort((a,b)=>{
+    return a - b;
+});
+
+ console.log(ssarr);
+
+// for (let m = 0; m < ClassAraay.length; m++) {
+//    // const element = ClassAraay[m];
+//     console.log(ClassAraay[m]);
+// }
+
+// console.log(ClassAraay);
+
+/*============== array method
+
+ClassAraay.push("სოფო"); // მასივის ბოლოს ახალი ელემენტის ჩამატება
+ClassAraay.unshift("სოფო"); // მასივის დასაწყისში ახალი ელემენტის ჩამატება
+ClassAraay.pop(); // შლის მასივის ბოლო ელემენტს
+ClassAraay.shift(); // შლის მასივის პირველ ელემენტს
+ClassAraay.splice(2,0, "გიორგი1", "გიორგი2"); // შლის და ამატებს მასივში ახალ ელემენტებს
+
+let ssarr = ClassAraay.map(element => {
+    return element + " it-step ";
+ }); // ამოწმებს ყველა ელემენტს და ქმნის ახალ მასივს
+
+ let ssarr = ClassAraay.foreach(element => {
+    return element + " it-step ";
+ }); // ამოწმებს ყველა ელემენტს და არ ქმნის ახალ მასივს
+
+  ClassAraay.includes("ალექსანდრე") // ეძებს სიმბოლოს მასივის და აბრუნებს boolean
+
+  ClassAraay.filter((arr)=>{
+  return arr == "გიორგი";
+})  // ქმნის ახალ მასივს გადაცემული პირობის მიხედვით
+
+
+  ClassAraay.find((arr)=>{
+  return arr == "გიორგი";
+})  // აბრუნებს პირველივე ელემენტს გადაცემული პირობით მიხედვით
+
+
+let ssarr =  arrnum.sort((a,b)=>{
+    return a - b;
+});  // მასივის სორტირება (რიცხვით მნიშვნელობებზე)
+
+================*/
