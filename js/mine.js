@@ -144,7 +144,62 @@ let ssarr =  arrnum.sort((a,b)=>{
     return a - b;
 });
 
- console.log(ssarr);
+ 
+
+ let Student = [
+
+    {
+        name:"სტუდენტი",
+        stip:true,
+        course:"front-end",
+        gender:"male",
+        status:"stoped"
+    },
+
+    {
+        name:"სტუდენტი",
+        stip:true,
+        course:"front-end",
+        gender:"male",
+        status:"active"
+    },
+
+    {
+        name:"სტუდენტი1",
+        stip:true,
+        course:"back-end",
+        gender:"male",
+        status:"stoped"
+    },
+
+ ]
+
+ let filtersuti = Student.filter((stud)=>{
+     return stud.status == "stoped";
+ })
+
+ filtersuti.forEach(el=>{
+
+    let type ;
+
+    if (el.course == "front-end") {
+        type = `<span class="badge bg-success">პროგრამირება</span>
+        `
+    }else{
+        type = `<span class="badge bg-primary">სხვა მიმართულება</span>`
+    }
+
+    el1.innerHTML += ` <div class="col-lg-4"> <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${el.name}</h5>
+      <p class="card-text">${el.course}</p>
+       ${type}
+    </div>
+    </div>
+  </div>`
+ })
+
 
 // for (let m = 0; m < ClassAraay.length; m++) {
 //    // const element = ClassAraay[m];
