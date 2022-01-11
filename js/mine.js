@@ -153,6 +153,7 @@ let ssarr =  arrnum.sort((a,b)=>{
         stip:true,
         course:"front-end",
         gender:"male",
+        age:22,
         status:"stoped"
     },
 
@@ -161,6 +162,7 @@ let ssarr =  arrnum.sort((a,b)=>{
         stip:true,
         course:"front-end",
         gender:"male",
+        age:24,
         status:"active"
     },
 
@@ -169,10 +171,18 @@ let ssarr =  arrnum.sort((a,b)=>{
         stip:true,
         course:"back-end",
         gender:"male",
+        age:22,
         status:"stoped"
     },
 
  ]
+
+ let agearra = Student.filter(els=>{
+     return els.age == 22;
+ })
+
+
+ console.log(agearra);
 
  let filtersuti = Student.filter((stud)=>{
      return stud.status == "stoped";
@@ -241,3 +251,90 @@ let ssarr =  arrnum.sort((a,b)=>{
 });  // მასივის სორტირება (რიცხვით მნიშვნელობებზე)
 
 ================*/
+
+let xs = "11";
+
+if (11 > 11 && 10 > 1 || 5 > 0) {
+    console.log("true")
+}else if(0 > 0){
+    console.log("false1")
+}else if(3 > 0){
+    console.log("false2")
+}
+else{
+    console.log("false")  
+}
+
+let mylang = 2;
+
+let lang =  mylang == 1 ? 'ka' : 'en';
+
+switch (lang) {
+    case "ka":
+        console.log("თქვენ ხართ ქართულ ვერსიაზე")
+        break;
+
+        case "en":
+            console.log("თქვენ ხართ ინგლისურ ვერსიაზე")
+            break;
+
+            case "ru":
+                console.log("თქვენ ხართ რუსულ ვერსიაზე")
+                break;
+
+                case "az":
+                    console.log("თქვენ ხართ ფრანგულ ვერსიაზე")
+                    break;
+
+    default:
+        console.log("თქვენ ხართ არ არსებულს ვერსიაზე")
+        break;
+}
+
+/* logic
+
+= // მნიშვნელობის მინიჭება
+== // მნიშვნელობის შედარება
+===  // ადარებს მნიშვნელობებს ასევე ტიპებს
+! //  შებრუნების ოპერატორი (არ)
+> // მეტობა
+>= // მეტობია ან ტოლია
+< ნაკლებობა
+<= ნაკლებია ან ტოლია
+
+|| // ან ოპერატორი
+&&  // და  ოპერატორი
+*/
+
+let d = new Date();
+
+
+setInterval(() => {
+    d = new Date()
+    time.innerHTML = `${d.getHours()} : ${d.getMinutes()} :  ${d.getSeconds()}`
+}, 1000);
+ 
+
+// let year = d.getFullYear(); // წელი
+// let month = d.getMonth() + 1; // დღევანდელი თვეა
+// let dey = d.getDate(); // დღევანდელი რიცხვი
+// let hour = d.getHours(); // საათი
+// let minute = d.getMinutes(); // წუთი
+// let sec = d.getSeconds(); // წამი
+
+
+
+
+
+let deyoff = d.getDay();
+
+
+let startdate =   Date.parse("2022/02/15");
+let enddate =   Date.parse(new Date());
+
+let sumdata  = startdate - enddate;
+
+let days = Math.floor( sumdata / (1000*60*60*24) );
+
+console.log(days);
+ 
