@@ -56,6 +56,29 @@ document.addEventListener("click", function(e){
 
 })
 
+
+let plus = document.querySelector('.btn-plus');
+let minus = document.querySelector('.btn-minus');
+let numb = document.querySelector('#num');
+let num = 0;
+plus.addEventListener("click", ()=>{
+  numb.innerText = ++num;
+ 
+})
+
+minus.addEventListener("click", ()=>{
+  if (num !== 0) {
+      numb.innerText = --num;
+  }
+})
+
+
+let ms = document.querySelector("#msg")
+let mss = document.querySelector(".texts")
+ms.addEventListener('click', function(){
+  mss.innerText = ms.innerText;
+})
+
 // window.addEventListener("scroll", function(e){
 //   console.log(this.scrollY)
 // })
