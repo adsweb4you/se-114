@@ -1,0 +1,35 @@
+body{
+    height: 1800px;
+}
+
+#testclass{
+    height: 200px;
+
+}
+
+.sidebar{
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease-in;
+    background-color: black;
+}
+
+.sidebar.show{
+    transform: translateX(0);
+}
+
+.contents{
+ padding: 40px;
+}
+
+.contents a{
+   display: block;
+   padding: 14px;
+   text-decoration: 0;
+   color: #fff;
+}

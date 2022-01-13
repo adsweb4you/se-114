@@ -154,12 +154,14 @@ let ssarr =  arrnum.sort((a,b)=>{
         course:"front-end",
         gender:"male",
         age:22,
+        img:'pohto.png',
         status:"stoped"
     },
 
     {
         name:"სტუდენტი",
         stip:true,
+        img:'',
         course:"front-end",
         gender:"male",
         age:24,
@@ -171,26 +173,33 @@ let ssarr =  arrnum.sort((a,b)=>{
         stip:true,
         course:"back-end",
         gender:"male",
+        img:'img/car.png',
         age:22,
         status:"stoped"
     },
 
  ]
 
- let agearra = Student.filter(els=>{
-     return els.age == 22;
- })
+//  let agearra = Student.filter(els=>{
+//      return els.age == 22;
+//  })
 
 
- console.log(agearra);
+//  console.log(agearra);
 
- let filtersuti = Student.filter((stud)=>{
-     return stud.status == "stoped";
- })
+//  let filtersuti = Student.filter((stud)=>{
+//      return stud.status == "stoped";
+//  })
 
- filtersuti.forEach(el=>{
+ Student.forEach(el=>{
 
     let type ;
+    let img ;
+    if (el.img == '') {
+        img = "https://www.pngkey.com/png/detail/233-2332677_image-500580-placeholder-transparent.png"
+    }else{
+        img = el.img;
+    }
 
     if (el.course == "front-end") {
         type = `<span class="badge bg-success">პროგრამირება</span>
@@ -200,7 +209,7 @@ let ssarr =  arrnum.sort((a,b)=>{
     }
 
     el1.innerHTML += ` <div class="col-lg-4"> <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="${img}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${el.name}</h5>
       <p class="card-text">${el.course}</p>
@@ -338,3 +347,35 @@ let days = Math.floor( sumdata / (1000*60*60*24) );
 
 console.log(days);
  
+let obs = [
+    {
+    name:"str",
+    created_at: new Date('2022/01/01')
+    },
+
+    {
+        name:"str",
+        created_at: new Date('2022/03/01')
+        },
+
+    {
+        name:"str",
+        created_at: new Date()
+     },
+
+     {
+        name:"str",
+        created_at: new Date()
+     },
+
+]
+
+obs.forEach(el=>{
+  let newtd = new Date();
+  let mathcs = newtd.getDate() == el.created_at.getDate() &&  newtd.getFullYear() == el.created_at.getFullYear() && newtd.getMonth()   == el.created_at.getMonth()
+  
+  let matchs = mathcs  ? 'დამატებულაიდღეს' : el.created_at.getMonth();
+
+
+    ts.innerHTML += matchs;
+})
