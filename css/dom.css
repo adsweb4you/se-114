@@ -87,5 +87,14 @@ body{
 }
 
 *{
-    cursor: url('../img/cat.png'), auto;
+    /* cursor: url('../img/cat.png'), auto; */
 }
+
+#overlay {
+    position:absolute; 
+    left:0; 
+    top:0; 
+    width:100px;
+    height: 100px; 
+    background-color:green;
+  }

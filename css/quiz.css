@@ -1,0 +1,18 @@
+.quis-div p {
+    cursor: pointer;
+}
+
+.succ{
+    background-color: greenyellow;
+    color: #fff;
+}
+
+
+.den{
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+.current{
+    display: block !important;
+}

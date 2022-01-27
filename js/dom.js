@@ -189,3 +189,59 @@ document.addEventListener('click', function(e){
   // });
 
 })
+
+
+document.querySelector('.create').addEventListener('click', creatediv);
+
+let inc = 0;
+
+function creatediv(){
+  let loaddiv = document.querySelector('.append');
+  let mydiv = document.createElement('div'); // html ელემენტის შექმნა
+
+
+mydiv.classList.add('bg-dark', 'p-5', 'text-center', 'text-white', 'mycreation'); // კლასის მინიჭება
+mydiv.textContent = "js დაგენერირებული html"; // კონტენტის მინიჭება
+mydiv.setAttribute('data-created', 1); // ატრიბუტის მინიჭება
+let p = document.createElement('p'); 
+
+p.innerText = "ჩემი p" + inc;
+
+mydiv.appendChild(p)
+
+loaddiv.prepend(mydiv); // ამატებს ელემენტს დასაწყისში
+inc++;
+
+let newel = document.querySelectorAll('.mycreation');
+
+newel.forEach(cre=>{
+  cre.addEventListener('click', function(){
+    this.classList.replace('bg-dark', 'bg-danger');
+  })
+})
+}
+
+
+
+var offset = [0,0];
+var divOverlay = document.getElementById ("overlay");
+var isDown = false;
+divOverlay.addEventListener('mousedown', function(e) {
+    isDown = true;
+    offset = [
+        divOverlay.offsetLeft - e.clientX,
+        divOverlay.offsetTop - e.clientY
+    ];
+}, true);
+document.addEventListener('mouseup', function() {
+    isDown = false;
+}, true);
+
+document.addEventListener('mousemove', function(e) {
+    event.preventDefault();
+    if (isDown) {
+        console.log(e.clientX,e.clientY);
+        divOverlay.style.left = (e.clientX + offset[0]) + 'px';
+        divOverlay.style.top  = (e.clientY + offset[1]) + 'px';
+    }
+}, true);

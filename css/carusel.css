@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.mybtn{
+    border: 0;
+    padding: 15px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.myp{
+    transition: all .6s;
+}
+
+.myp.active{
+    padding-left: 15px;
+    color: forestgreen;
+}
+
+.carusel{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.carusel .item{
+    height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateX(100%);
+  transition: all .5s;
+  width: 100%;
+}
+
+.carusel .item.active{
+    transform: translateX(0);
+    z-index: 99;
+}
+
+.carusel .item.mynext{
+    transform: translateX(-100%);
+}
+
+.carusel .item.myprev{
+    transform: translateX(-100%);
+}
+ 
+
+.arr{
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    z-index: 99999;
+    border: 0;
+    padding: 16px;
+    font-size: 31px;
+    border-radius: 7px;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.arr.prev{
+ left: 35px;
+}
+
+
+.arr.next{
+    right:  35px;
+}
+
+.car-text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0%;
+    opacity: 0;
+    transition: all .6s;
+    z-index: 9888;
+    color: #fff;
+}
+
+.carusel .item.active .car-text{
+    opacity: 1;
+    top: 50%;
+}
+
+.test{
+    height: 5000px;
+    /* background-image: url('../img/wall/251624.jpg'); */
+    background-size: cover;
+ 
+}
+
+.slides{
+    display: flex;
+    position: sticky;
+    top: 25px;
+    justify-content: center;
+     
+    
+}
+
+.tsitem{
+    width: 33.3333%;
+    margin: 25px;
+    height: 400px;
+    background-color: red;
+}
