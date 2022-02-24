@@ -277,4 +277,12 @@ $(".addcrt").click(function (e) {
 });
 
 
+$('.maps li').css('background-color', 'red')
+
+$.each($('.maps li'), function(index, elemet){
+ if($(elemet).text() == "კონტენტ 1"){
+  $(elemet).replaceWith(`<li> <span> 25 </span></li>`)
+ }
+})
+
 });
