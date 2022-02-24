@@ -13,12 +13,37 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">მთავარი</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ajaxpage/price.html">სიახლეები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ajaxpage/card.html">პროდუქცია</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ajaxpage/contact.html">კონტაქტი</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <button class="btn btn-success" onclick="get()">მონაცემების წამოღება</button>
 
 
     <div class="container">
-        <div class="row" id="loads">
-
+        <div class="row justify-content-center align-items-center" id="loads" style="min-height: 400px;">
+           <img src="img/loader.svg" class="w-25 loader img-fluid d-none" alt="">
         </div>
     </div>
 
@@ -27,37 +52,61 @@
 
     <script>
         function get() {
+
+ $('.loader').removeClass('d-none');
+
             $.ajax({
                 type: "get",
-                url: "http://127.0.0.1:5500/data.json",
-                data: {
-                    name: "asdas",
-                    price: "250",
-                    orderbY: ["ASC"]
-                },
+                url: "https://jsonplaceholder.typicode.com/albums",
+                // data: {
+                //     name: "asdas",
+                //     price: "250",
+                //     orderbY: ["ASC"]
+                // },
                 dataType: "text",
                 success: function (response) {
+
+         
+
                     response = JSON.parse(response)
                     response.forEach(Post => {
                        let card  = `
                        <div class="col-lg-3">     <div class="card">
- 
+   <img class="img-fluid" src="${Post.url}"> 
   <div class="card-body">
-    <h5 class="card-title">${Post.name}</h5>
-    <p class="card-text"> ${Post.price}</p>
+    <h5 class="card-title">${Post.title}</h5>
+    <p class="card-text"> ${Post.id}</p>
     <a href="#" class="btn btn-primary">${Post.id} </a>
   </div>
 </div>
                        `; 
-                      $("#loads").append(card)
+                      $("#loads").append(card) 
+              
                     });
 
-                   
+ setTimeout(()=>{
+        $('.loader').addClass('d-none');
+        }, 500)             
                 }
             });
 
         }
 
+
+
+$('.nav-link').click(function (e) { 
+    e.preventDefault();
+    let page = $(this).attr('href')
+
+    $('#loads').load(page)
+
+    //history.pushState(null, null, page)
+});
+
+$(document).on("click", ".repl", function (e) { 
+    e.preventDefault();
+  $('h1').text('babasd')
+});
 
     </script>
 </body>
