@@ -155,4 +155,126 @@ $(function () {
   console.log($('.parents').next( ))
 
 
+let Cars = [
+
+  {
+    id:1,
+    name:"ford",
+    model:["mustang", "f-150", "branco"],
+  },
+
+  {
+    id:2,
+    name:"bmw",
+    model:["f-10", "m3", "m5"],
+  },
+
+  {
+    id:3,
+    name:"toyota",
+    model:["camry", "hiluxe", "prado"],
+  },
+
+  {
+    id:4,
+    name:"tesla",
+    model:[
+
+      {
+        id:5,
+        name:"model-S"
+      },
+      {
+        id:3,
+        name:"model-S"
+      },
+      {
+        id:4,
+        name:"model-S"
+      }
+
+    ],
+  },
+
+]
+
+Cars.forEach(car=>{
+  $('#make').append(`<option value="${car.id}">  ${car.name}</option>`)
+})
+
+$("#make").change(function (e) { 
+  e.preventDefault();
+
+  $('#model').empty();
+
+  let id = $(this).val();
+
+ let Models =  Cars.find(el=>{
+    return el.id == id;
+  })
+
+
+  Models.model.forEach(mod=>{
+      $('#model').append(`<option value="${mod}">  ${mod}</option>`)
+  })
+
+
+  
+});
+
+
+$(".colors span").click(function (e) { 
+  e.preventDefault();
+   let img = $(this).data('img');
+   $('.poster').attr('src', img)
+});
+
+let c = 0;
+$(".addcrt").click(function (e) { 
+  e.preventDefault();
+  
+  $(this).css({
+     "background-color":"red",
+     "transition":"all .6s",
+     "color":"#fff",
+     "border":"3px solid red"
+  })
+
+  setTimeout(()=>{
+    $(".addcrt").css({
+      "width":"56px",
+      "height":"56px",
+      "transition":"all .6s",
+    }).text(1);
+ 
+
+    setTimeout(()=>{
+     
+    $('.counter').css({
+      "opacity":1,
+      "z-index":99999,
+      "pointer-events":"all",
+      "top":" 41px",
+      "transform": "scale(.4)",
+      "left": "19rem",
+    }).text(c)
+
+    $(".addcrt").css({
+      "width":"100%",
+      "height":"56px",
+      "transition":"all .6s",
+      "background-color":"#fff",
+      "color":"#000",
+      "border":"3px solid #000"
+    }).text("Add To cart");
+
+    }, 600)
+
+  }, 600)
+
+  c++;
+
+});
+
+
 });
