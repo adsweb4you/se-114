@@ -1,0 +1,12 @@
+1) წამოვიღოთ მონაცემები  https://jsonplaceholder.typicode.com/ დან ajax გამოყენბით და გამოვიტანოთ html ში
+
+2) გვერდი ჩატვირთვამდე უნდა ჩანდეს ლოადერ გიფი https://www.scania.com/content/dam/developer-images/ajax-loader.gif
+
+3) კონტენტის ჩატვირთვის შემდეგ უნდა გამოჩდეს კონტენტი ხოლო ლოადერი გაქრეს
+
+4) ჩავტვირთოთ გვერდები load ფუნქციის გამოყენებით 
+
+
+== საშინაო
+
+https://www.cluemediator.com/wp-content/uploads/2021/02/output-load-more-data-from-the-database-using-ajax-jquery-in-php-with-mysql-clue-mediator.gif

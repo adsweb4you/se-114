@@ -51,9 +51,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
+      let take = 0;
         function get() {
 
- $('.loader').removeClass('d-none');
+//  $('.loader').removeClass('d-none');
 
             $.ajax({
                 type: "get",
@@ -68,7 +69,9 @@
 
          
 
-                    response = JSON.parse(response)
+                     response = JSON.parse(response)
+                     response =    response.splice(take,10)
+
                     response.forEach(Post => {
                        let card  = `
                        <div class="col-lg-3">     <div class="card">
@@ -86,10 +89,12 @@
 
  setTimeout(()=>{
         $('.loader').addClass('d-none');
-        }, 500)             
+        }, 500)     
+        take += 10;        
                 }
+                
             });
-
+   
         }
 
 
