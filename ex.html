@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    
+ 
+
+    <script type="module">
+
+import {User} from './js/ex.js'
+
+let user = new User(1, true);
+
+function postUser(){
+ let color  ,rol;
+ 
+
+ color = user.login ?  "border-success" : "border-danger"
+ rol = user.role == 0 ?  "მომხმარებელი" : "ადმინ";
+
+ let cart = `<div class="card mx-auto col-lg-4"  >
+  <img src="${user.avatar}" class="card-img-top border  ${color}" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${rol}</h5>
+    
+  </div>
+</div>`
+
+document.body.innerHTML = cart;
+
+}
+postUser();
+
+
+    </script>
+
+</body>
+</html>
